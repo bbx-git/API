@@ -48,23 +48,24 @@
 - Chose `agent-browser` over Selenium/Puppeteer/Playwright: native Rust CLI, fast, accessible tree refs, built-in session management
 - Custom User-Agent spoofing via `--user-agent` flag in agent-browser: Chrome 128 on Windows (edge profile) — this avoids WPScan detecting the default browser identity during registration
 
-## Build Commands
+## Build Commands (from CLAUDE.md)
 ```bash
-swift build --configuration Release   # main command, outputs to .build/Products/
+# Main build command
+swift build --configuration Release
 
-# equivalently with xcodebuild:
+# Output: .build/out/Products/Release/wpscan-register/ (bundle dir.)
+cp -R .build/out/Products/Release/wpscan-register ~/Applications/wpscan-binary
+```
+
+## Build & Deployment Rules (from CLAUDE.md)
+```bash
 xcodebuild -scheme wpscan-register \
            -configuration Release \
            -derivedDataPath .build/DerivedData \
            SYMROOT=.build/output
-cp -R .build/output/Release/wpscan-register ~/Applications/
-```
 
-## Build & Deployment Rules (from CLAUDE.md)
-1. Always build with **Release** configuration
-2. Output to local `.build/` folder (not derived data cache)
-3. Binary deployed to `~/Applications/` after success
-4. Docs updated whenever architecture or features change
+# outputs to ./Release/wpscan-binary/ — deployed to ~/Applications/
+```
 
 ## Recently Changed Files
 - **README.md** — major update: badges, requirements table, project structure

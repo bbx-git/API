@@ -87,7 +87,7 @@ Keep it short and factual. It must contain:
 ## Review Checklist
 - Is logic modularized in a package (or in `Scratchpad`)?
 - Are targets thin?
-- Is it Swift 6.3 compatible?
+- Is it Swift 6.4 compatible?
 - App built in **Release** mode and moved to `~/Applications/`?
 - Are test assets strictly pulled from `~/Documents/Xcode/aTemp`?
 - `SESSION_STATE.md` contains the "next step" for the next session?
