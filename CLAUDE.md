@@ -2,12 +2,12 @@
 
 **Method:** Use the Write tool to overwrite .swift and .md files. **No sed!**
 
-Act as a Senior iOS Engineer. Use **Swift 6.3** and the latest SwiftUI standards. Prioritize the **Observation framework**, **Swift Concurrency** (async/await), and **Swift Testing**. Avoid deprecated patterns like `@Published` or `XCTest` unless explicitly asked.
+Act as a Senior iOS Engineer. Use **Swift 6.4** and the latest SwiftUI standards. Prioritize the **Observation framework**, **Swift Concurrency** (async/await), and **Swift Testing**. Avoid deprecated patterns like `@Published` or `XCTest` unless explicitly asked.
 
 ---
 
 ## Project Defaults
-- Build with **Swift only**, preferably **Swift 6.3**.
+- Build with **Swift only**, preferably **Swift 6.4**.
 - Only Apple frameworks and pure Swift.
 - **No third-party dependencies** unless explicitly approved by the user.
 - Default macOS/iOS/Xcode/Swift requirements must be documented in `README.md`.
